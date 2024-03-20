@@ -1,0 +1,168 @@
+/* Import Lato font from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+/* Set box-sizing property to border-box for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  /* Set background color to green */
+  background-color: #58cbee; 
+  /* Set text color to red */
+  color: #f30606;
+  /* Flexbox styles: center and align content to center, set height to 150vh */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+  /* Set font family to Lato */
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+/* Styles for container holding movie selection dropdown and seat chart */
+.movie-container {
+  margin: 20px 0;
+}
+
+/* Styles for movie selection dropdown */
+.movie-container select {
+  /* Set background color to light red */
+  background-color: #ede77e;
+  /* Remove border */
+  border: 0;
+  /* Set border radius to 5px */
+  border-radius: 5px;
+  /* Set font size to 16px */
+  font-size: 16px;
+  /* Add left margin of 10px */
+  margin-left: 10px;
+  /* Add padding */
+  padding: 5px 15px 5px 15px;
+  /* Remove default appearance */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Styles for seat chart container */
+.container {
+  /* Add 3D perspective for seat animation */
+  perspective: 1000px;
+  /* Add bottom margin */
+  margin-bottom: 30px;
+}
+
+/* Styles for individual seats */
+.seat {
+  /* Set background color to navy blue */
+  background-color: #1919f3;
+  /* Set height and width */
+  height: 26px;
+  width: 32px;
+  /* Add margin */
+  margin: 3px;
+  /* Set font size to 50px */
+  font-size: 50px;
+  /* Add border radius to top corners */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Styles for selected seats */
+.seat.selected {
+  /* Change background color to red */
+  background-color: red;
+}
+
+/* Styles for sold seats */
+.seat.sold {
+  /* Change background color to orange */
+  background-color: #ec8a2f;
+}
+
+/* Styles for second seat in each row */
+.seat:nth-of-type(2) {
+  /* Add right margin */
+  margin-right: 18px;
+}
+
+/* Styles for second to last seat in each row */
+.seat:nth-last-of-type(2) {
+  /* Add left margin */
+  margin-left: 18px;
+}
+
+/* Hover styles for unselected seats */
+.seat:not(.sold):hover {
+  /* Set cursor to pointer */
+  cursor: pointer;
+  /* Scale the seat up slightly */
+  transform: scale(1.2);
+}
+
+/* Hover styles for seats in showcase (already selected) */
+.showcase .seat:not(.sold):hover {
+  /* Set cursor to default */
+  cursor: default;
+  /* Remove scaling */
+  transform: scale(1);
+}
+
+/* Styles for showcase container holding already selected seats */
+.showcase {
+  /* Set background color with alpha value */
+  background: rgba(52, 221, 60, 0.1);
+  /* Add padding and border radius */
+  padding: 5px 10px;
+  border-radius: 5px;
+  /* Set text color */
+  color: #777;
+  /* Remove list style */
+  list-style-type: none;
+  /* Add flexbox styles to space out li elements */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles for individual seats in showcase container */
+.showcase li {
+  /* Add flexbox styles to center content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Add horizontal margin */
+  margin: 0 10px;
+}
+
+/* Styles for small text within showcase container */
+.showcase li small {
+  /* Add left margin */
+  margin-left: 2px;
+}
+
+/* Styles for row of seats */
+.row {
+  /* Add flexbox styles */
+  display: flex;
+}
+
+.screen {
+  background-color: #edf762;
+  height: 120px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-48deg);
+  box-shadow: 0 3px 10px rgba(8, 8, 8, 0.7);
+}
+
+p.text{
+    margin: 5px 0;
+}
+
+p.text span{
+    color: rgb(10, 10, 10);
+}

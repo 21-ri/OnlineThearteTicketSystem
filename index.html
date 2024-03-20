@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> <!-- Sets the character encoding for the document -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Specifies the version of Internet Explorer to use -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Sets the viewport for responsive design -->
+    <link rel="stylesheet" href="style.css" /> <!-- Links an external CSS file -->
+    <title>Movie Seat Booking</title> <!-- Sets the title of the document -->
+  </head>
+  <body>
+    <h1>Movie Seat Selection</h1> <!-- Heading for the movie seat selection -->
+    <div class="movie-container">
+      <label> Select a movie:</label> <!-- Label for the movie selection dropdown -->
+      <select id="movie"> <!-- Dropdown menu for selecting a movie -->
+        <option value="8">The Batman</option> <!-- Option for selecting "The Batman" movie -->
+        <option value="6">Top Gun: Maverick</option> <!-- Option for selecting "Top Gun: Maverick" movie -->
+        <option value="10">Doctor Strange in The Multiverse of Madness</option> <!-- Option for selecting "Doctor Strange in The Multiverse of Madness" movie -->
+        <option value="7">Fantastic Beasts: The Secrets of Dumbledore</option> <!-- Option for selecting "Fantastic Beasts: The Secrets of Dumbledore" movie -->
+      </select>
+    </div>
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div> <!-- Empty seat -->
+        <small>Available</small> <!-- Text indicating an available seat -->
+      </li>
+      <li>
+        <div class="seat selected"></div> <!-- Selected seat -->
+        <small>Selected</small> <!-- Text indicating a selected seat -->
+      </li>
+      <li>
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <small>Sold</small> <!-- Text indicating a sold seat -->
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div> <!-- Display area or screen -->
+
+      <div class="row">
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+      </div>
+
+      <div class="row">
+        <!-- 2nd row of seats -->
+        <div class="seat"></div> <!-- Seat 1 -->
+        <div class="seat"></div> <!-- Seat 2 -->
+        <div class="seat"></div> <!-- Seat 3 -->
+        <div class="seat"></div> <!-- Seat 4 -->
+        <div class="seat sold"></div> <!-- Seat 5 (sold) -->
+        <div class="seat"></div> <!-- Seat 6 -->
+        <div class="seat"></div> <!-- Seat 7 -->
+        <div class="seat"></div> <!-- Seat 8 -->
+        <div class="seat"></div> <!-- Seat 9 -->
+        <div class="seat"></div> <!-- Seat 10 -->
+        <div class="seat"></div> <!-- Seat 11 -->
+        <div class="seat"></div> <!-- Seat 12 -->
+        <div class="seat"></div> <!-- Seat 13 -->
+        <div class="seat"></div> <!-- Seat 14 -->
+        <div class="seat sold"></div> <!-- Seat 15 (sold) -->
+        <div class="seat sold"></div> <!-- Seat 16 (sold) -->
+        <div class="seat"></div> <!-- Seat 17 -->
+        <div class="seat"></div> <!-- Seat 18 -->
+        <div class="seat sold"></div> <!-- Seat 19 (sold) -->
+        <div class="seat sold"></div> <!-- Seat 20 (sold) -->
+        <div class="seat"></div> <!-- Seat 14 -->
+        <div class="seat sold"></div> <!-- Seat 15 (sold) -->
+      </div>
+      
+      <div class="row">
+        <!-- third row of seats -->
+        <div class="seat"></div> <!-- Seat 1 -->
+        <div class="seat"></div> <!-- Seat 2 -->
+        <div class="seat sold"></div> <!-- Seat 3 (sold) -->
+        <div class="seat"></div> <!-- Seat 4 -->
+        <div class="seat"></div> <!-- Seat 5 -->
+        <div class="seat"></div> <!-- Seat 6 -->
+        <div class="seat sold"></div> <!-- Seat 7 (sold) -->
+        <div class="seat"></div> <!-- Seat 8 -->
+        <div class="seat"></div> <!-- Seat 9 -->
+        <div class="seat"></div> <!-- Seat 10 -->
+        <div class="seat"></div> <!-- Seat 11 -->
+        <div class="seat sold"></div> <!-- Seat 12 (sold) -->
+        <div class="seat"></div> <!-- Seat 13 -->
+        <div class="seat"></div> <!-- Seat 14 -->
+        <div class="seat"></div> <!-- Seat 15 -->
+        <div class="seat"></div> <!-- Seat 16 -->
+        <div class="seat"></div> <!-- Seat 8 -->
+        <div class="seat"></div> <!-- Seat 9 -->
+        <div class="seat"></div> <!-- Seat 10 -->
+        <div class="seat"></div> <!-- Seat 11 -->
+        <div class="seat sold"></div> <!-- Seat 12 (sold) -->
+      </div>
+      <hr> <!-- Horizontal line -->
+      
+      <div class="row">
+        <!-- 4th row of seats -->
+        <div class="seat"></div> <!-- Seat 1 -->
+        <div class="seat"></div> <!-- Seat 2 -->
+        <div class="seat sold"></div> <!-- Seat 3 (sold) -->
+        <div class="seat"></div> <!-- Seat 4 -->
+        <div class="seat"></div> <!-- Seat 5 -->
+        <div class="seat"></div> <!-- Seat 6 -->
+        <div class="seat sold"></div> <!-- Seat 7 (sold) -->
+        <div class="seat"></div> <!-- Seat 8 -->
+        <div class="seat"></div> <!-- Seat 9 -->
+        <div class="seat"></div> <!-- Seat 10 -->
+        <div class="seat"></div> <!-- Seat 11 -->
+        <div class="seat sold"></div> <!-- Seat 12 (sold) -->
+        <div class="seat"></div> <!-- Seat 13 -->
+        <div class="seat"></div> <!-- Seat 14 -->
+        <div class="seat"></div> <!-- Seat 15 -->
+        <div class="seat"></div> <!-- Seat 16 -->
+        <div class="seat"></div> <!-- Seat 13 -->
+        <div class="seat"></div> <!-- Seat 14 -->
+        <div class="seat"></div> <!-- Seat 15 -->
+        <div class="seat"></div> <!-- Seat 16 -->
+      </div>
+      
+      <div class="row">
+        <!-- 5th row of seats -->
+        <div class="seat"></div> <!-- Seat 1 -->
+        <div class="seat sold"></div> <!-- Seat 2 (sold) -->
+        <div class="seat sold"></div> <!-- Seat 3 (sold) -->
+        <div class="seat"></div> <!-- Seat 4 -->
+        <div class="seat"></div> <!-- Seat 5 -->
+        <div class="seat"></div> <!-- Seat 6 -->
+        <div class="seat"></div> <!-- Seat 7 -->
+        <div class="seat"></div> <!-- Seat 8 -->
+        <div class="seat"></div> <!-- Seat 9 -->
+        <div class="seat"></div> <!-- Seat 10 -->
+        <div class="seat"></div> <!-- Seat 11 -->
+        <div class="seat sold"></div> <!-- Seat 12 (sold) -->
+        <div class="seat"></div> <!-- Seat 13 -->
+        <div class="seat"></div> <!-- Seat 14 -->
+        <div class="seat"></div> <!-- Seat 15 -->
+        <div class="seat sold"></div> <!-- Seat 16 (sold) -->
+        <div class="seat"></div> <!-- Seat 13 -->
+        <div class="seat"></div> <!-- Seat 14 -->
+        <div class="seat"></div> <!-- Seat 15 -->
+        <div class="seat sold"></div> <!-- Seat 16 (sold) -->
+      </div>
+      
+      <div class="row">
+        <!-- 6th row of seats -->
+        <div class="seat"></div> <!-- Seat 1 -->
+        <div class="seat"></div> <!-- Seat 2 -->
+        <div class="seat"></div> <!-- Seat 3 -->
+        <div class="seat sold"></div> <!-- Seat 4 (sold) -->
+        <div class="seat"></div> <!-- Seat 5 -->
+        <div class="seat"></div> <!-- Seat 6 -->
+        <div class="seat"></div> <!-- Seat 7 -->
+        <div class="seat"></div> <!-- Seat 8 -->
+        <div class="seat sold"></div> <!-- Seat 9 (sold) -->
+        <div class="seat"></div> <!-- Seat 10 -->
+        <div class="seat"></div> <!-- Seat 11 -->
+        <div class="seat"></div> <!-- Seat 12 -->
+        <div class="seat"></div> <!-- Seat 13 -->
+        <div class="seat"></div> <!-- Seat 14 -->
+        <div class="seat"></div> <!-- Seat 15 -->
+        <div class="seat"></div> <!-- Seat 16 -->
+        <div class="seat"></div> <!-- Seat 13 -->
+        <div class="seat"></div> <!-- Seat 14 -->
+        <div class="seat"></div> <!-- Seat 15 -->
+        <div class="seat"></div> <!-- Seat 16 -->
+      </div>
+
+      <div class="row">
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class=" "></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+    </div>
+    <hr>
+    <div class="row">
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+    </div>
+    
+    <div class="row">
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+    </div>
+    
+    <div class="row">
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+        <div class="seat"></div> <!-- Empty seat -->
+        <div class="seat sold"></div> <!-- Sold seat -->
+      </div>
+    </div>
+
+    <!-- This is a paragraph element with class "text" -->
+<p class="text">
+  You have selected <span id="count">0</span> seats
+</p>
+
+<!-- This is a hyperlink element with href attribute pointing to "booking.php" -->
+<!-- It contains a button element which has class "button-82-pushable" and role "button" -->
+<a href="booking.php">
+  <button class="button-82-pushable" role="button">
+    <!-- This is a span element with class "button-82-shadow" -->
+    <span class="button-82-shadow"></span>
+    <!-- This is a span element with class "button-82-edge" -->
+    <span class="button-82-edge"></span>
+    <!-- This is a span element with class "button-82-front" and text content "Back to Booking" -->
+    <span class="button-82-front text">
+      Back to Booking
+    </span>
+  </button>
+</a>
+
+<!-- This is a style element containing CSS code for styling the HTML elements -->
+<style>
+  /* Styles for the button element */
+  .button-82-pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  /* Styles for the shadow of the button element */
+  .button-82-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+
+  /* Styles for the edge of the button element */
+  .button-82-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(
+      to left,
+      hsl(340deg 100% 16%) 0%,
+      hsl(340deg 100% 32%) 8%,
+      hsl(340deg 100% 32%) 92%,
+      hsl(340deg 100% 16%) 100%
+    );
+  }
+
+  /* Styles for the front of the button element */
+  .button-82-front {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background: hsl(345deg 100% 47%);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+
+  @media (min-width: 768px) {
+    /* Styles for the button element on screens with minimum width of 768px */
+    .button-82-front {
+      font-size: 1.25rem;
+      padding: 12px 42px;
+    }
+  }
+
+  /* Hover styles for the button element */
+  .button-82-pushable:hover {
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+  }
+
+  /* Hover styles for the front of the button element */
+  .button-82-pushable:hover .button-82-front {
+    transform: translateY(-6px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+
+  /* Active styles for the front of the button element */
+  .button-82-pushable:active .button-82-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+
+  /* Hover styles for the shadow of the button element */
+  .button-82-pushable:hover .button-82-shadow {
+    transform: translateY(4px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+
+  /* Active styles for the shadow of the button element */
+  .button-82-pushable:active .button-82-shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+
+  .button-82-pushable:focus:not(:focus-visible) {
+        outline: none;
+      }
+    </style>
+
+    <!-- The following line includes an external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

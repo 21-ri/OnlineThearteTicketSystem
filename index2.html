@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Linking to an external CSS file called style.css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Setting the title of the page to "Movie Seat Booking" -->
+    <title>Movie Seat Booking</title>
+  </head>
+
+  <body>
+    <!-- Adding an h1 element with the text "Movie Seat Selection" -->
+    <h1>Movie Seat Selection</h1>
+
+    <!-- Creating a container for the movie selection dropdown -->
+    <div class="movie-container">
+      <label> Select a movie:</label>
+
+      <!-- Creating a dropdown to select the movie with options for each movie -->
+      <select id="movie">
+        <option value="8">The Batman</option>
+        <option value="6">Top Gun: Maverick</option>
+        <option value="10">Doctor Strange in The Multiverse of Madness</option>
+        <option value="7">Fantastic Beasts: The Secrets of Dumbledore</option>
+      </select>
+    </div>
+
+    <!-- Creating a list to showcase the different seat states -->
+    <ul class="showcase">
+      <li>
+        <!-- A div representing an available seat -->
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <!-- A div representing a selected seat -->
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <!-- A div representing a sold seat -->
+        <div class="seat sold"></div>
+        <small>Sold</small>
+      </li>
+    </ul>
+
+    <!-- Creating the container for the seating chart -->
+    <div class="container">
+      <!-- A div representing the movie screen -->
+      <div class="screen"></div>
+
+      <!-- Creating the first row of seats -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+      </div>
+
+      <!-- Creating the second row of seats -->
+      <div class="row">
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+      </div>
+
+      <!-- Creating the third row of seats -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->     
+      </div>
+
+      <!-- Creating the fourth row of seats -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+      </div>
+
+      <hr>
+
+      <!-- Creating the fifth row of seats -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+      </div>
+
+      <!-- Creating the sixth row of seats -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+      </div>
+
+      <!-- Creating the seventh row of seats -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+      </div>
+      <hr>
+      <!-- Creating the eight row of seats -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+      </div>
+      <!-- Creating the Nine row of seats -->
+        <div class="row">
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+      </div>
+      <!-- Creating the Ten row of seats -->
+        <div class="row">
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+      </div>
+      <hr>
+      <!-- Creating the Eleven row of seats -->
+        <div class="row">
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+      </div>
+      <!-- Creating the Twelve row of seats -->
+        <div class="row">
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+      </div>
+      <!-- Creating the 13 row of seats -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div> <!-- first seat in row 2 -->
+        <div class="seat"></div> <!-- second seat in row 2 -->
+        <div class="seat"></div> <!-- third seat in row 2 -->
+        <div class="seat"></div> <!-- fourth seat in row 2 -->
+        <div class="seat sold"></div>     <!-- fifth seat in row 2, already sold -->
+      </div>
+    </div>
+    <p class="text">
+      You have selected <span id="count">0</span> seats
+    </p>
+    <!-- HTML !-->
+  <a href="booking.php"><button class="button-82-pushable" role="button">
+  <span class="button-82-shadow"></span>
+  <span class="button-82-edge"></span>
+  <span class="button-82-front text">
+    Back to Booking
+  </span>
+</button></a>
+
+  <script src="script.js"></script>
+</body>
+  <style>
+    .button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+  </style>
+</html>
